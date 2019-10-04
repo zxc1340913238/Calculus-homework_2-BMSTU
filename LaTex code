@@ -47,10 +47,12 @@ solve:&\lim_{x \to -1} \frac{(x^3 -2x-1)(x+1)}{x^4+4x^2 -5}=
 \[\lim_{x \to +\infty} \frac{x^2 + \sqrt{16x^4 - x\sqrt{x}}}{3x^2+1}\]
 \quad
 \begin{equation*}
-solve:\lim_{x \to +\infty} \frac{x^2 + \sqrt{16x^4 - x\sqrt{x}}}{3x^2+1}=
-\lim_{x \to +\infty} \frac{x^2 (1+\sqrt{16-\frac{1}{\sqrt{x^5}}})}{x^2 (3+\frac{1}{x^2})}=
-\lim_{x \to +\infty} \frac{1+\sqrt{16-\frac{1}{\sqrt{x^5}}}}{3+\frac{1}{x^2}}=
+\begin{aligned}
+solve:&\lim_{x \to +\infty} \frac{x^2 + \sqrt{16x^4 - x\sqrt{x}}}{3x^2+1}=
+\lim_{x \to +\infty} \frac{x^2 (1+\sqrt{16-\frac{1}{\sqrt{x^5}}})}{x^2 (3+\frac{1}{x^2})}=\\
+&=\lim_{x \to +\infty} \frac{1+\sqrt{16-\frac{1}{\sqrt{x^5}}}}{3+\frac{1}{x^2}}=
 \frac{1+4}{3}=\frac{5}{3}
+\end{aligned}
 \end{equation*}
 Ответ:\begin{equation*}
 \lim_{x \to +\infty} \frac{x^2 + \sqrt{16x^4 - x\sqrt{x}}}{3x^2+1}=\frac{5}{3}
@@ -74,10 +76,10 @@ Solve:
 \begin{aligned}
 &\lim_{x \to 8} \biggr( \frac{2x-7}{x+1}\biggl) ^{\frac{1}{\sqrt[3]{x}-2}}=
 \lim_{t \to 0}  \biggr( \frac{2t+9}{t+9}\biggl) ^{\frac{1}{\sqrt[3]{t+8}-2}}=
-\lim_{t \to 0}  \biggr(1+ \frac{t}{t+9}\biggl) ^{\frac{1}{\sqrt[3]{t+8}-2}}=
-&\lim_{t \to 0}  \biggr(1+ \frac{t}{t+9}\biggl) ^{\frac{t+9}{t}\cdot \frac{t}{t+9}\cdot \frac{1}{\sqrt[3]{t+8}-2}}=\\
-&=\lim_{t \to 0}  \biggr(1+ \frac{t}{t+9}\biggl) ^{\frac{t+9}{t}\cdot \frac{t}{t+9}\cdot \frac{\sqrt[3]{(t+8)^2}+2\sqrt[3]{t+8}+4}{t}}=
-e^{\lim_{t \to 0} \frac{\sqrt[3]{(t+8)^2}+2\sqrt[3]{t+8}+4}{t+9}}=
+\lim_{t \to 0}  \biggr(1+ \frac{t}{t+9}\biggl) ^{\frac{1}{\sqrt[3]{t+8}-2}}=\\
+=&\lim_{t \to 0}  \biggr(1+ \frac{t}{t+9}\biggl) ^{\frac{t+9}{t}\cdot \frac{t}{t+9}\cdot \frac{1}{\sqrt[3]{t+8}-2}}=
+\lim_{t \to 0}  \biggr(1+ \frac{t}{t+9}\biggl) ^{\frac{t+9}{t}\cdot \frac{t}{t+9}\cdot \frac{\sqrt[3]{(t+8)^2}+2\sqrt[3]{t+8}+4}{t}}=\\
+=&e^{\lim_{t \to 0} \frac{\sqrt[3]{(t+8)^2}+2\sqrt[3]{t+8}+4}{t+9}}=
 e^{\frac{4}{3}}
 \end{aligned}
 \end{equation*}
