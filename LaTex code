@@ -24,7 +24,7 @@ it mean that when $n>\frac{1}{\epsilon}$,(2) is workable ,and because (1) is hol
 \begin{equation*}
 N=max\left\{ 2,\frac{1}{\epsilon} \right\} \eqno{(3)}
 \end{equation*}
-Prove:
+Proof:
 $\forall \epsilon >0, \exists N=max\left\{ 2,\frac{1}{\epsilon} \right\} $, according to the analysis, when n>N, the formula (2) is workable.
 \newpage
 \section*{Задача 2}
@@ -60,13 +60,22 @@ solve:&\lim_{x \to +\infty} \frac{x^2 + \sqrt{16x^4 - x\sqrt{x}}}{3x^2+1}=
 \newpage
 \subsection*{Задание 2(с)}
 \[\lim_{x \to 4} \frac{\sqrt{2x+1}-3}{\sqrt{x-2}-\sqrt{2}}\]
-Solve:
+Solve1:
+\begin{equation*}
+\begin{aligned}
+&\lim_{x \to 4} \frac{\sqrt{2x+1}-3}{\sqrt{x-2}-\sqrt{2}}=
+\lim_{x \to 4} \frac{2x+1-9}{\sqrt{2x+1}+3}\cdot \frac{\sqrt{x-2}+\sqrt{2}}{x-4}=\\
+&=\lim_{x \to 4} \frac{2(x-9)(\sqrt{x-2}+\sqrt{2})}{(\sqrt{2x+1}+3)(x-9)}=
+\lim_{x \to 4} \frac{2(\sqrt{x-2}+\sqrt{2})}{\sqrt{2x+1}+3}=\frac{2\sqrt{2}}{3}
+\end{aligned}
+\end{equation*}
+Solve2:
 \begin{equation*}
 \lim_{x \to 4} \frac{\sqrt{2x+1}-3}{\sqrt{x-2}-\sqrt{2}}=
 \lim_{x \to 4} \frac{2\sqrt{x-2}}{\sqrt{2x+1}}=\frac{2\sqrt{2}}{3} (L'Hospital's Rule)
 \end{equation*}
 Answer:
-\[:\lim_{x \to 4} \frac{\sqrt{2x+1}-3}{\sqrt{x-2}-\sqrt{2}}\]
+\[:\lim_{x \to 4} \frac{\sqrt{2x+1}-3}{\sqrt{x-2}-\sqrt{2}}=\frac{2\sqrt{2}}{3}\]
 \qquad
 \subsection*{Задание 2(d)}
 \[\lim_{x \to 8} \biggr( \frac{2x-7}{x+1}\biggl) ^{\frac{1}{\sqrt[3]{x}-2}}\]
@@ -126,6 +135,48 @@ Answer:
 %Доказать:
 %то же самое
 \subsection*{2)}
+\subsubsection*{a)}
+гл.часть:\quad $c(x-x_0)^k$.
+\begin{equation*}
+\begin{aligned}
+&\lim_{x \to 3} \frac{f(x)}{c(x-x_0)^k}=1,\quad
+\lim_{x \to 3} \frac{2^x-8}{c(x-3)^k}=1,\quad
+\frac{1}{c}\cdot\lim_{x \to 3} \frac{2^3(2^{x-3}-1)}{c(x-3)^k}=1,\quad
+\frac{8}{c}\cdot\lim_{x \to 3} \frac{2^{x-3}-1}{c(x-3)^k}=1
+\end{aligned}
+\end{equation*}
+замена:$x-3=t$
+\begin{equation*}
+\begin{aligned}
+&\frac{8}{c}\cdot\lim_{t \to 0}\frac{2^t-1}{t^k}=1,\quad
+\frac{8}{c}\cdot\lim_{t \to 0}\frac{t\ln{2}}{t^k}=1,\quad
+\frac{8\ln{2}}{c}\cdot\lim_{t \to 0}\frac{1}{t^{k-1}}=1
+\end{aligned}
+\end{equation*}
+так мы получим: $k=1,c=8\ln{2}$,\\
+поэтому гл.часть= $8\ln{2}\cdot(x-3)$,\\
+$f(x)\sim 8\ln{2}\cdot(x-3)$,\quad при$ (x \to 3)$
+\subsubsection*{b)}
+гл.часть: $c(x-x_0)^k$
+\begin{equation*}
+\begin{aligned}
+&\lim_{x \to 3} \frac{g(x)}{c(x-x_0)^k}=1,\quad
+\lim_{x \to 3} \frac{\ln{\frac{x}{3}}}{c(x-3)^k}=1,\quad
+\frac{1}{c}\cdot \lim_{x \to 3}\frac{\ln{\frac{x}{3}}}{(x-3)^k}=1
+\end{aligned}
+\end{equation*}
+замена: $x-3=t$
+\begin{equation*}
+\begin{aligned}
+\frac{1}{c}\cdot \lim_{t \to 0} \frac{\ln{\frac{t+3}{3}}}{t^k}=1,\quad
+\frac{1}{c}\cdot \lim_{t \to 0} \frac{\ln{(1+\frac{t}{3})}}{t^k}=1,\quad
+\frac{1}{c}\cdot \lim_{t \to 0} \frac{\frac{t}{3}}{t^k}=1,\quad
+\frac{1}{3c}\cdot \lim_{t \to 0} \frac{1}{t^{k-1}}=1
+\end{aligned}
+\end{equation*}
+так мы получим: $k=1$,$c=\frac{1}{3}$\\
+поэтому гл.часть=$\frac{1}{3}(x-3)$\\
+$g(x) \sim \frac{1}{3}(x-3)$, \quad при$(x \to 3)$
 \subsection*{3)}
 \[\lim_{x \to 3} \frac{f(x)}{g(x)}=\lim_{x \to 3} \frac{2^x -8 }{\ln{\frac{x}{3}}}=\lim_{x \to 3} \ln{2} \cdot 2^x \cdot x = 24\ln{2}=C\]
 Поэтому $f$ и $g$ являются бесконечно малыми того же порядка когда $x \to 3$.
