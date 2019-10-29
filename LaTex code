@@ -10,6 +10,13 @@
 \maketitle{Вариант 1}
 \section*{Задача 1}
 \[a_n =\frac{3n-2}{2n-1},a=\frac{3}{2}\]
+Показать:
+\[
+\begin{tabular}{|c|c|c|c|}
+\hline $\varepsilon$&0.1.&0.01&0.001\\
+\hline N($\varepsilon$)&3&25&250\\
+\hline
+\end{tabular}\]
 Доказать:\[\lim_{n \to \infty} a_n=a\]
 Analyze:
 \begin{equation*}
@@ -22,7 +29,7 @@ therefore, for any $ \epsilon>0$, if $\frac{1}{n} < \epsilon$, we get:
 \end{equation*}
 it mean that when $n>\frac{1}{\epsilon}$,(2) is workable ,and because (1) is holds under the condition $n\ge 2$, so:
 \begin{equation*}
-N=max\left\{ 2,\frac{1}{\epsilon} \right\} \eqno{(3)}
+\text{N=max}\left\{ 2,\frac{1}{\epsilon} \right\} \eqno{(3)}
 \end{equation*}
 Proof:
 $\forall \epsilon >0, \exists N=max\left\{ 2,\frac{1}{\epsilon} \right\} $, according to the analysis, when n>N, the formula (2) is workable.
@@ -189,13 +196,19 @@ f(x)=
 \frac{\sqrt{x+3}}{2-x},&x \ge 1
 \end{cases}
 \end{equation*}
-когда x=2 и x=0, функция не определена, и :
+когда x=0 и x=2, функция не определена, и :
+\subsection*{a)}
 \begin{equation*}
 \lim_{x \to 0^-} f(x) =0,
-\lim_{x \to 0^+} f(x)=+\infty,
+\lim_{x \to 0^+} f(x)=+\infty
+\end{equation*}
+\[\text{Поэтому это второй тип разрыва.}\]
+\subsection*{b)}
+\begin{equation*}
 \lim_{x \to 2^-} f(x)= +\infty,
 \lim_{x \to 2^+} f(x)= -\infty.
 \end{equation*}
+\[\text{Поэтому это второй тип разрыва.}\]
 поэтому точки разрыва функции $x_1 = 0, x_2=2.$
 \begin{center}\includegraphics[width= 1\textwidth]{a.eps}
 \end{center}
